@@ -1,0 +1,26 @@
+{
+  "name": "tower-of-chaos",
+  "version": "1.0.0",
+  "description": "A Roguelike RPG made with Phaser",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annatsu/tower-of-chaos.git"
+  },
+  "keywords": [
+    "rpg",
+    "roguelike",
+    "phaser"
+  ],
+  "author": {
+    "name": "Brendon Pagano",
+    "email": "brendonpagano@gmail.com",
+    "url": "https://github.com/Annatsu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Annatsu/tower-of-chaos/issues"
+  },
+  "homepage": "https://github.com/Annatsu/tower-of-chaos#readme"
+}
