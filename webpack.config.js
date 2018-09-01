@@ -45,18 +45,11 @@ module.exports = {
 
     optimization: {
         splitChunks: {
-            cacheGroups: {
-                vendors: false,
-                default: false,
-                vendor: {
-                    chunks: 'all',
-                    test: /node_modules/
-                }
-            }
+            chunks: 'all'
         },
         minimizer: [
             new UglifyJsPlugin({
-                sourceMap: true,
+                sourceMap: false,
                 uglifyOptions: {
                     ecma: 8,
                     compress: true,
