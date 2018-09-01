@@ -6,10 +6,13 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 
 module.exports = {
+    mode: 'production',
+
     entry: {
         app: path.resolve(__dirname, 'src', 'index.js')
     },
@@ -40,7 +43,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             path: path.resolve(__dirname, 'build', 'index.html'),
             template: 'index.html'
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: path.resolve(__dirname, 'assets'),
+            to: path.resolve(__dirname, 'build', 'assets')
+        }])
     ],
 
     optimization: {
